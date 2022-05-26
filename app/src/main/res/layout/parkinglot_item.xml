@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_positionName"
+            android:text="地點："
+            android:textSize="14sp"
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_position"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/parkinglot_positionName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_totalCarName"
+            android:text="總共車位："
+            android:textSize="14sp"
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toBottomOf="@id/parkinglot_position"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_totalCar"
+            android:textColor="@color/black"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toBottomOf="@+id/parkinglot_position"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/parkinglot_totalCarName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_availableCarName"
+            android:text="剩餘車位："
+            android:textSize="14sp"
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toBottomOf="@id/parkinglot_totalCarName"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_availableCar"
+            android:textColor="@color/black"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toBottomOf="@+id/parkinglot_totalCar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/parkinglot_availableCarName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_notesName"
+            android:text="公告："
+            android:textSize="14sp"
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toBottomOf="@id/parkinglot_availableCarName"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_Notes"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:textAlignment="viewStart"
+            app:layout_constraintTop_toBottomOf="@+id/parkinglot_availableCar"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/parkinglot_notesName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_updateTimeName"
+            android:text="最後更新時間："
+            android:textSize="14sp"
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toBottomOf="@id/parkinglot_Notes"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_Updatetime"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/parkinglot_Notes"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/parkinglot_updateTimeName"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/parkinglot_XY"
+            android:text="地點"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/parkinglot_Updatetime"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
